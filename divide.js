@@ -16,8 +16,8 @@ exports.handler = async (event) => {
             Answer.answer = 0
         } else {
             Answer.error = false,
-            Answer.string = x + "+" + y + "=" + ((parseInt(x)) + (parseInt(y))),
-            Answer.answer = (parseInt(x)) + (parseInt(y))
+            Answer.string = x + "/" + y + "=" + ((parseInt(x)) / (parseInt(y))),
+            Answer.answer = (parseInt(x)) / (parseInt(y))
         }
 
         const response = {
