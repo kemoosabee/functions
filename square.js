@@ -22,6 +22,11 @@ exports.handler = async (event) => {
 
         const response = {
             statusCode: 200,
+            headers:{
+                "Access-Control-Allow-Headers" : "*",
+                "Access-Control-Allow-Origin" : "*",
+                "Access-Control-Allow-Methods" : "*",
+            },
             body: JSON.stringify(Answer),
         };
         return response;
@@ -32,6 +37,11 @@ exports.handler = async (event) => {
         
         const response = {
             statusCode: 200,
+            headers:{
+                "Access-Control-Allow-Headers" : "*",
+                "Access-Control-Allow-Origin" : "*",
+                "Access-Control-Allow-Methods" : "*",
+            },
             body: JSON.stringify(Answer),
         };
         return response;
